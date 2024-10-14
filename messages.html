@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Messages - Zeryth Reviews</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>ZERYTH REVIEWS</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="messages.html">Messages</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="messages-section">
+    <div class="container">
+        <h2>Messages</h2>
+        <div class="message-list"></div>
+    </div>
+</section>
+
+<footer>
+    <p>ZERYTH REVIEWS - Has AI Generated Content</p>
+</footer>
+
+<script>
+    const messageList = document.querySelector('.message-list');
+
+    // Load messages from the server
+    async function loadMessages() {
+        const response = await fetch('/messages.txt');
+        const messages = await response.text();
+        const messageArray = messages.split('\n').filter(msg => msg); // Filter out empty lines
+
+        messageList.innerHTML = ""; // Clear any previous messages
+
+        // Reverse the array to show newest messages first
+        messageArray.reverse().forEach(msg => {
+            const messageItem = document.createElement('div');
+            const parts = msg.split(' | ');
+            if (parts.length === 2) {
+                messageItem.innerHTML = `<p><strong>Date & Time (GMT):</strong> ${parts[0]}</p><p>${parts[1]}</p>`;
+                messageList.appendChild(messageItem);
+            }
+        });
+    }
+
+    // Initial load of messages
+    loadMessages();
+</script>
+
+
+</body>
+</html>
