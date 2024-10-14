@@ -192,22 +192,22 @@ nav ul li a {
 }
 
 .category-item:hover {
-    background-color: #a9c9ff; /* You can match this with your theme's color */
+    background-color: #a9c9ff; 
     color: #fff;
 }
 
 .categories-section {
     display: flex;
-    justify-content: center;  /* Horizontally center */
-    align-items: center;      /* Vertically center */
-    flex-wrap: wrap;          /* Ensure items wrap nicely */
-    min-height: 100vh;        /* Make sure the section takes up full height */
+    justify-content: center;  
+    align-items: center;     
+    flex-wrap: wrap;          
+    min-height: 100vh;        
 }
 
 
 .category-item {
-    width: 150px;             /* Set a fixed width for each category */
-    height: 150px;            /* Set a fixed height for each category */
+    width: 150px;             
+    height: 150px;            
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,11 +217,11 @@ nav ul li a {
     font-size: 18px;
     cursor: pointer;
     transition: transform 0.3s;
-    margin: 40px;             /* Add space between boxes */
+    margin: 40px;             
 }
 
 .category-item:hover {
-    transform: scale(1.05);    /* Small hover effect */
+    transform: scale(1.05);    
 }
 
 
@@ -231,32 +231,32 @@ nav ul li a {
 
 /* Styling the anime reviews list */
 .anime-reviews {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; 
     padding: 0;
     margin: 0;
-    text-align: center; /* Center the list items */
+    text-align: center; 
 }
 
 .anime-reviews li {
-    margin: 10px 0; /* Add some space between the list items */
+    margin: 10px 0; 
 }
 
 .anime-reviews a {
-    text-decoration: none; /* Remove underline */
-    color: #66cc66; /* The same green color as your previous site */
+    text-decoration: none; 
+    color: #66cc66; 
     font-size: 1.2em;
     font-weight: bold;
-    transition: color 0.3s ease-in-out; /* Smooth transition effect for hover */
+    transition: color 0.3s ease-in-out; 
 }
 
 .anime-reviews a:hover {
-    color: #4da64d; /* Deeper green on hover */
+    color: #4da64d; 
 }
 
 /* Ensure the container is centered */
 .reviews-list {
     padding: 40px;
-    background-color: #f9f9f9; /* Optional: Light background for contrast */
+    background-color: #f9f9f9; 
     border-radius: 8px;
     max-width: 800px;
     margin: 20px auto;
@@ -272,7 +272,7 @@ nav ul li a {
 
 .review-heading {
     text-align: center;
-    color: #66cc66; /* Green color for heading */
+    color: #66cc66; 
     margin-bottom: 20px;
 }
 
@@ -282,7 +282,7 @@ nav ul li a {
 }
 
 .review-content h3.subheading {
-    color: #ffcc66; /* Different color for subheadings */
+    color: #ffcc66;
     margin-top: 20px;
     font-size: 1.2em;
 }
@@ -295,19 +295,19 @@ nav ul li a {
 }
 
 .rating-section p {
-    font-size: 1.5em; /* Slightly bigger text */
-    font-weight: bold; /* Bold text */
-    font-style: italic; /* Italic text */
+    font-size: 1.5em; 
+    font-weight: bold; 
+    font-style: italic; 
 }
 
 .rating-box {
-    background-color: #ffcc00; /* Box background color (choose a suitable color) */
-    color: #202020; /* Text color (make it contrast with the background) */
-    padding: 5px 10px; /* Padding inside the box */
-    border-radius: 10px; /* Rounded corners */
-    font-weight: bold; /* Bold text */
-    font-size: 1.3em; /* Slightly larger than surrounding text */
-    display: inline-block; /* Ensure the box fits the text */
+    background-color: #ffcc00; 
+    color: #202020; 
+    padding: 5px 10px; 
+    border-radius: 10px;
+    font-weight: bold; 
+    font-size: 1.3em; 
+    display: inline-block; 
 }
 
 
@@ -325,7 +325,7 @@ footer {
 
 
 footer p {
-    margin: 0;                /* Remove default margin */
-    font-size: 14px;          /* Font size */
-    color: #777;              /* Light gray color for secondary text */
+    margin: 0;                
+    font-size: 14px;          
+    color: #777;              
 }
