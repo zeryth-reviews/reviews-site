@@ -36,27 +36,24 @@
 <script>
     const messageList = document.querySelector('.message-list');
 
-    // Load messages from the server
+    // Load messages from the JSON file
     async function loadMessages() {
-        const response = await fetch('/messages.txt');
-        const messages = await response.text();
-        const messageArray = messages.split('\n').filter(msg => msg); // Filter out empty lines
+        const response = await fetch('/messages.json');  // Fetch the JSON file
+        const messages = await response.json();          // Parse the JSON
 
         messageList.innerHTML = ""; // Clear any previous messages
 
         // Reverse the array to show newest messages first
-        messageArray.reverse().forEach(msg => {
+        messages.reverse().forEach(msg => {
             const messageItem = document.createElement('div');
-            const parts = msg.split(' | ');
-            if (parts.length === 2) {
-                messageItem.innerHTML = `<p><strong>Date & Time (GMT):</strong> ${parts[0]}</p><p>${parts[1]}</p>`;
-                messageList.appendChild(messageItem);
-            }
+            messageItem.innerHTML = `<p><strong>Date & Time (GMT):</strong> ${msg.date}</p><p>${msg.message}</p>`;
+            messageList.appendChild(messageItem);
         });
     }
 
     loadMessages();
 </script>
+
 
 
 </body>
