@@ -1,107 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-DC23C03PV2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-DC23C03PV2');
-</script>
-    <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-WH8T2GCL');</script>
-    <!-- End Google Tag Manager -->
-
-    <!-- Primary Meta Tags -->
-    <title>Zeryth Reviews</title>
-    <meta name="title" content="Zeryth Reviews"/>
-    <meta name="description" content="Reviews on various contents."/>
-
-    <!-- Universal Open Graph Tags -->
-    <meta property="og:type" content="website"/>
-    <meta property="og:url" content="https://zeryth-reviews.github.io/reviews-site/index.html"/>
-    <meta property="og:title" content="Zeryth Reviews"/>
-    <meta property="og:description" content="Reviews on various contents."/>
-    <meta property="og:image" content="https://zeryth-reviews.github.io/reviews-site/assets/ogbanner.jpg"/>
-    <meta property="og:image:width" content="1200"/>
-    <meta property="og:image:height" content="630"/>
-
-    <!-- Universal Social Card Tag -->
-    <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="image" content="https://zeryth-reviews.github.io/reviews-site/assets/ogbanner.jpg"/>
-    <meta name="url" content="https://zeryth-reviews.github.io/reviews-site/index.html"/>
-
+    <title>Zeryth Reviews - Curating Quality Content</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Zeryth Reviews</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="Long-form reviews on movies, anime, software, and more.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WH8T2GCL"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-    <div class="custom-background">
-
-        <header>
-            <a href="index.html">
-                <img src="assets/logo.png" alt="Zeryth Reviews Logo" class="logo">
-            </a>
+    <header class="site-header">
+        <div class="container">
+            <a href="index.html" class="logo">Zeryth Reviews</a>
             <nav>
-                <ul>
-                    <li><a href="#">Homepage</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="messages.html">Messages</a></li>
-                </ul>
+                <a href="index.html">Home</a>
+                <a href="archive.html">Archive</a>
+                <a href="index.html#all-categories">Categories</a>
+                <a href="about.html">About</a>
             </nav>
-        </header>
+        </div>
+    </header>
 
+    <main>
         <section class="hero">
-            <h2>Curating Quality Content — Where Every Review Counts!</h2>
-            <a href="categories.html">
-                <button>Browse Categories</button>
-            </a>
+            <div class="container">
+                <h1>Curating Quality Content.</h1>
+                <p>In-depth reviews without the fluff.</p>
+
+                <div class="search-container">
+                <input type="text" id="search-input" placeholder="Search reviews by title or keyword...">
+            </div>
+            </div>
         </section>
 
-        <section class="latest-work">
-
-            <div class="work-item">
-                <a href="categories/deepdive/mainReview4.html">
-                    <img src="https://i.imgur.com/GbpocRJ.png" alt="Work 4">
-                </a>
+        <section class="latest-reviews">
+            <div class="container">
+                <h2 id="reviews-section-title">Latest Reviews</h2>
+            <div id="latest-reviews-grid" class="reviews-grid">
+                </div>
+                <div class="view-all-container">
+                    <a href="archive.html" class="button-view-all">View All Reviews</a>
+                </div>
             </div>
-
-            <div class="work-item">
-                <a href="categories/apps/mainReview3.html">
-                    <img src="https://i.imgur.com/92wzjZY.png" alt="Work 3">
-                </a>
-            </div>
-            <div class="work-item">
-                <a href="categories/anime/mainReview2.html">
-                    <img src="https://i.imgur.com/hMtiYQ2.jpeg" alt="Work 2">
-                </a>
-            </div>
-
-            <div class="work-item">
-                <a href="categories/softwares/mainReview1.html">
-                    <img src="https://i.imgur.com/3PNQbyO.png" alt="Work 1">
-                </a>
-            </div>
-            
         </section>
         
+        <section id="all-categories" class="all-categories">
+            <div class="container">
+                <h2>Browse by Category</h2>
+                <ul id="all-categories-list" class="categories-list">
+                </ul>
+            </div>
+        </section>
 
-    </div>
+    </main>
 
-    <footer>
-        <p>ZERYTH REVIEWS - Has AI Generated Content</p>
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2024 Zeryth Reviews. Has AI Generated Content.</p>
+        </div>
     </footer>
+
+    <script src="js/reviews-db.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
