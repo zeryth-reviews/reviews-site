@@ -1,5 +1,15 @@
 const reviewsDB = [
         {
+        slug: "minecraft-server-in-android",
+        title: "Complete Guide to Running a Minecraft Java Server on Android (No Root)",
+        category: "Guides",
+        date: "2025-07-19",
+        author: "Zeryth",
+        heroImage: "https://i.postimg.cc/qRbMntYk/minecraftserver.png",
+        summary: "A comprehensive walkthrough on how to install and host a public Minecraft Paper server with plugin support on your Android device using Termux.",
+        rating: ""
+    },
+        {
         slug: "human-meat-consumption",
         title: "Human Meat Consumption - A Deep Dive",
         category: "Deep Dives",
